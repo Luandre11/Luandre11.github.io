@@ -1,12 +1,57 @@
-<script>
-    while (1) {
-        alert(`      
-                       ╱|、    Meow
-                      (˚ˎ 。7  
-                       |、˜〵          
-                      じしˍ,)ノ`
-                      
-                        
-                      );
-    }
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copilot Integration Example</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(40, 134, 189, 0.8); /* Updated color with transparency */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center; /* Ensures text and inline elements like images are centered */
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px; /* Increased padding for a more spacious layout */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 100%; /* Full width for smaller devices */
+            max-width: 600px; /* Maximum width for larger devices */
+            margin-top: 20px; /* Adds space from the top of the viewport */
+        }
+        .logo {
+            max-width: 25%; /* Reduces the maximum width to half of the container's width */
+            height: auto; /* Maintains the image aspect ratio */
+            margin: 0 20px 20px 0; /* Adds padding to the right and bottom, and removes margin from the left */
+            display: block; /* Ensures the logo is a block-level element for margin auto to work */
+        }
+        
+        iframe {
+            border-radius: 8px;
+            overflow: hidden;
+            border: none;
+            height: 500px;
+            width: 100%; /* Ensures the iframe takes the full width of its container */
+        }
+        @media (min-width: 768px) {
+            .container {
+                margin-top: 50px; /* Additional top margin for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/company.png" alt="Company Logo" class="logo"> <!-- Ensure the src is correct -->
+        <b style="color: #2886BD; font-size: 24px; font-weight: bold; padding: 10px;">Welcome to Our Support</b>
+        <iframe src="https://copilotstudio.microsoft.com/environments/Default-7f99f120-dfe2-4222-8fff-b88c37adee0b/bots/cr390_oveSupport/webchat?__version__=2" style="border-radius: 8px; overflow: hidden; border: none; height: 500px; width: 100%; background-color: rgba(40, 134, 189, 0.8);"></iframe>
+    </div>
+</body>
+</html>
